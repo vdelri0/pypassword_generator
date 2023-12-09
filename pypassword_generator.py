@@ -17,4 +17,4 @@ password_size = nr_letters + nr_numbers + nr_symbols
 combined_characters = random_letters + random_numbers + random_symbols
 password = random.sample(combined_characters, password_size)
 
-print(f"Here is your password: {''.join(password)}")
+print(f"Here is your password: {''.join(str(p) for p in password)}")
